@@ -1,10 +1,13 @@
+import React from 'react';
 import './App.css';
+import Navbar from './navbar';
+
 
 function App() {
   return (
     <div>
 
-     <h1> Iniciando Projeto </h1>
+    <Navbar />
       
     </div>
   );
