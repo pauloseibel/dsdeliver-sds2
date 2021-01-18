@@ -3,7 +3,7 @@
     padding-bottom: 15px;
     background-color: var(--dark-color);
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     text-align: center;
     color: #FFF;
@@ -16,5 +16,5 @@
   }
   
   .footer-icons > * {
-    margin-right: 5px;
+    margin-right: 10px;
   }
