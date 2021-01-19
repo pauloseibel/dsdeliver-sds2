@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import Home from './home';
-import Navbar from './navbar';
+import Routes from './routes';
 
 
 
@@ -9,9 +8,7 @@ function App() {
   return (
     <div>
 
-    <Navbar />
-    <Home />
-    
+    <Routes />    
       
     </div>
   );
