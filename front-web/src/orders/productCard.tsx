@@ -3,6 +3,8 @@ import { Product } from './types';
 
 type props = {
     product: Product;
+    onSelectProduct: (product: Product) => void;
+    isSelected: boolean;
 }
 
 function formatPrice(price: number) {
@@ -15,9 +17,11 @@ function formatPrice(price: number) {
     return formatter.format(price);
 }
 
-function ProductCard({product}: props) {
+function ProductCard({product, onSelectProduct, isSelected }: props) {
     return (
-        <div className="order-card-container">
+        <div className={`order-card-container ${isSelected ? 'select' : ''}`}
+             onClick={() => onSelectProduct(product)}
+        >
             <h3 className="order-card-title"> 
             {product.name}
             </h3>
